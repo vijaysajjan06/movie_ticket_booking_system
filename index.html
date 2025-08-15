@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Star Cinema - Your Premier Movie Destination. Book tickets for the latest movies in our state-of-the-art theater.">
+    <title>Star Cine'MAA' - Your Premier Movie Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="cinema.jpg" alt="Star Cinema Logo" class="logo-img">
+                <div class="logo">Star Cinema</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#now-showing">Now Showing</a></li>
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#theater-info">Our Theater</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <button class="slider-arrow prev-arrow" onclick="prevSlide()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+            </button>
+            <button class="slider-arrow next-arrow" onclick="nextSlide()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+            </button>
+            <div class="slide active" style="background-image: url('screen.jpg')">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Welcome to Star Cine'MAA'</h1>
+                    <p>Experience movies like never before in our state-of-the-art theater</p>
+                    <a href="#now-showing" class="cta-button">Book Tickets Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('seats1.jpg')">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Premium Comfort</h1>
+                    <p>Relax in our luxurious recliner seats</p>
+                    <a href="#now-showing" class="cta-button">Book Tickets Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('popcorn1.jpg')">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Movie Snacks</h1>
+                    <p>Enjoy fresh popcorn and delicious treats</p>
+                    <a href="#now-showing" class="cta-button">Book Tickets Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('projector1.jpg')">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>4K Projection</h1>
+                    <p>Watch movies in stunning 4K quality</p>
+                    <a href="#now-showing" class="cta-button">Book Tickets Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="now-showing" class="now-showing">
+        <h2 class="section-title">Now Showing</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="forevertt.jpeg" alt="Movie 1" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">Forever</h3>
+                    <p>Best Shortfilm in Kalakruti 2025</p>
+                    <p>Akash, a college student, grapples with feelings of disappointment and resentment towards his father. When his father makes an unexpected visit to reconcile, Arun's unresolved emotions lead him to avoid the meeting. As the day unfolds, a series of events challenges their strained relationship, highlighting the profound impact of unspoken words and missed opportunities.</p>
+                    <p class="show-times">Show Times: 2:30 PM | 6:30 PM | 9:30 PM</p>
+                    <a href="#" class="book-btn" onclick="openBooking('Forever')">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="upcoming" class="now-showing">
+        <h2 class="section-title">Coming Soon</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="suicide1.jpeg" alt="Movie 2" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">Suicide</h3>
+                    <p>Best Shortfilm in Utkarsha 2025</p>
+                    <p>Arjun, a college student who decided to end his life, experiences some super natural feeling which made to realize that there will be KRISHNA for every ARJUNA</p>
+                    <p class="release-date">Coming on: June 15, 2025</p>
+                </div>
+            </div>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="warden1.jpeg" alt="Movie 2" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">War-Done</h3>
+                    <p>First film of AIML and CS students of B.E.C</p>
+                    <p>Group of friends plans to take revenge from their seniors who had beaten one of their friend, eventually they faces crazy incidents in this process. Best part of this shortfilm is it gives nostalgic feel of hostel, College and Student life</p>
+                    <p class="release-date">Coming on: July 26, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="theater-info" class="theater-info">
+        <h2 class="section-title">Our Theater</h2>
+        <div class="theater-gallery">
+          <center>  <img src="seats1.jpg" alt="Theater Interior" class="gallery-img" width="500px" height="300px">
+            <img src="screen.jpg" alt="Theater Seats" class="gallery-img" width="500px" height="300px"></center><br>
+        </div>
+        <div class="theater-features">
+            <center> <h3>Theater Features</h3>
+            <ul>
+                <li>4K Digital Projection</li>
+                <li>Dolby Atmos Sound System</li>
+                <li>Premium Recliner Seats</li>
+                <li>State-of-the-art Air Conditioning</li>
+            </ul></center>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBooking()">&times;</span>
+            <h2>Book Tickets</h2>
+            
+            <div class="booking-steps">
+                <div class="step active" id="step1">1. Select Seats</div>
+                <div class="step" id="step2">2. Personal Details</div>
+                <div class="step" id="step3">3. Payment</div>
+            </div>
+
+            <form class="booking-form" action="process_booking.php" method="POST" id="bookingForm">
+                <input type="hidden" id="movieTitle" name="movieTitle">
+                
+                <!-- Step 1: Seat Selection -->
+                <div class="booking-section active" id="seatSelectionSection">
+                    <div class="form-group">
+                        <label for="showtime">Select Show Time</label>
+                        <select id="showtime" name="showtime" required onchange="updateSeatAvailability()">
+                            <option value="14:30">2:30 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="21:30">9:30 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="seat-selection">
+                        <h3>Select Your Seats</h3>
+                        <div class="screen">Screen</div>
+                        <div class="seat-map">
+                            <div class="seat-legend">
+                                <div class="legend-item">
+                                    <div class="seat available"></div>
+                                    <span>Available</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="seat selected"></div>
+                                    <span>Selected</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="seat occupied"></div>
+                                    <span>Occupied</span>
+                                </div>
+                            </div>
+                            <div class="seat-grid" id="seatGrid">
+                                <!-- Seats will be generated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="seat-summary">
+                            <div class="selected-seats">
+                                Selected Seats: <span id="selectedSeats">None</span>
+                            </div>
+                            <div class="total-price">
+                                Total Price: ₹<span id="totalPrice">0</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="selectedSeatsInput" name="selectedSeats" required>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="nextStep(1)">Continue to Personal Details</button>
+                </div>
+
+                <!-- Step 2: Personal Details -->
+                <div class="booking-section" id="personalDetailsSection">
+                    <h3>Personal Details</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="back-btn" onclick="prevStep(2)">Back to Seat Selection</button>
+                        <button type="button" class="submit-btn" onclick="nextStep(2)">Continue to Payment</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Payment -->
+                <div class="booking-section" id="paymentSection">
+                    <h3>Payment Details</h3>
+                    <div class="form-group">
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" name="payment" required>
+                            <option value="credit">Credit Card</option>
+                            <option value="debit">Debit Card</option>
+                            <option value="upi">UPI</option>
+                        </select>
+                    </div>
+                    <div class="booking-summary">
+                        <h4>Booking Summary</h4>
+                        <p>Movie: <span id="summaryMovie"></span></p>
+                        <p>Show Time: <span id="summaryShowtime"></span></p>
+                        <p>Selected Seats: <span id="summarySeats"></span></p>
+                        <p>Total Amount: ₹<span id="summaryAmount"></span></p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="back-btn" onclick="prevStep(3)">Back to Personal Details</button>
+                        <button type="submit" class="submit-btn">Confirm Booking</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: starcinema@gmail.com</p>
+                <p>Phone: 7483627371</p>
+                <p>Instagram: <a href="https://instagram.com/p_art_h_05">Instagram</a></p>
+                <p>Address: Vidyagiri,Bagalkot</p><br>
+               <center> <p class="copyright">&copy; 2025 Star Cinema. All rights reserved.</p></center>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
